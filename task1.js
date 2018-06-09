@@ -12,10 +12,10 @@ if (numbers.length === 2) {
 	let e = Number(numbers[1]); 
 
 	if (e <= 100 && e >=1 && n>=1 && n<=100) {
-		var sum = 0;
-		for (var i = 1; i <= n; i++) {
+		var sum = 1;
+		for (var i = 2; i <= n; i++) {
 			var q = 1;
-			for(var j = 0; j < e;j++) q *= i;
+			for(var j = 1; j <= e;j++) q *= i;
 			sum += q;
 		}
 
